@@ -48,15 +48,7 @@ body, select, input, textarea {
 body {
   font: 13px MyriadPro, sans-serif;
 }
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
+
 Inherited from 
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
   margin: 0;
@@ -153,67 +145,6 @@ body
 	background: rgb(190, 190, 190);
 }
 
-ul#Menu1 {
-   height: 38px;
-   padding: 12px 0px 0px 0px;
-   margin: 0;
-   color:#333333; 
-   list-style-type: none;
-   display: table;
-   width: 100%;
-}
-
-ul#Menu1 li  {
-   float:left;
-   width:220px;
-   border-top: 1px solid #dddddd;
-   margin: 0px 20px 0 0px;
-   padding: 8px 0px 4px 0px;
-   display:table-cell;
-}
-ul#Menu1 li a {
-   font-size: 1em;
-   display:block;
-   margin: 0 0 0px 0;
-   padding: 0px 0 1px 0;
-}
-
-/* Special padding for the first and last menu item, so that they meeet the page edges neatly */
-ul#Menu1 li.first  {
-   padding: 8px 0px 4px 0px;
- 
-}
-
-ul#Menu1 li.last  {
-   padding: 8px 0px 4px 0;
-   margin: 0px 0px 0 0px;
-    
-}
-
-ul#Menu1 li.current a {
-   color:#f13d3d;
-}
-ul#Menu1 li.section a {
-   color:#f13d3d; 
-}
-/* Special icon for RSS menu item */
-ul#Menu1 li.rss  {
-   background: transparent url(../images/Icons/rss-feed.png) no-repeat 0 10px; 
-   padding: 8px 0 4px 16px;
-   width:204px;
-}
-
-
-ul#Menu1 li span.subtitle {
-    color:#777777;
-}
-ul#Menu1 li a:hover span.email {
-    text-decoration: underline;
-}
-
-.clear{
-     clear:both;
-}
 
 body.AboutUsPage div.about_title   {
    color:#333333;
