@@ -1,0 +1,920 @@
+.ragapaclosemebox { border: 0 none; position: absolute; width: 20px; height: 75px; bottom:0; margin-bottom: 0px; left:0; background: url('http://d636bn4g8u8yp.cloudfront.net/ragapa/www/images/device/static/closeme.gif') #FFFFFF bottom left no-repeat; cursor: pointer; filter:alpha(opacity=100); } #ragapapoweredby { border: 0 none; text-align: right; margin-bottom: 0px; width: 140px; height: 20px; position: absolute; bottom:0px; right:15px; z-index: 1000000; font-size: 11px; font-family:Arial,Verdana,sans-serif; font-weight: bolder; font-variant: normal; color: #999; background: url('http://d636bn4g8u8yp.cloudfront.net/ragapa/www/images/device/static/alldeals.gif') bottom right no-repeat; } #ragapaSearchBarDiv{ position: static; margin: 0 0 0 0; padding: 0 0 0 0; } #ragapaSearchBar { clear: both; position: absolute; display:inline; width: auto; height: 21px; bottom: 0px; left: 0px; margin: 5px 45px 5px 3%; z-index: 999998; border: 1px solid #D5D5D5; background: #000000; color: #FFFFFF; filter:alpha(opacity=70); opacity: 0.7; -moz-opacity:0.7; } #ragapaSearchContent { height: 17px; width: 100px; font-family: Arial,Verdana,sans-serif; font-weight: bold; font-size: 12px; border: none; color: #FFFFFF; background: #000000; filter:alpha(opacity=70); opacity: 0.7; -moz-opacity:0.7; vertical-align: middle; text-align: left; z-index: 999999; } #ragapaSearchButton { border: none; width: 80px; height: 20px; vertical-align: middle; padding: 0 0 0 0; margin: 0 0 0 0; } #ragapaBottomDiv { border: 0 none; width: 100%; height: 90px; position: fixed; bottom:0; margin-bottom: 0px; margin-top: 0px; left:0; display: none;  _top: expression( ( - 95 + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' ); _position: absolute; _height: 85px; _width: expression( ( (document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) -1 ) + 'px'); _overflow: hidden; } #ragapabottomtransparency { border: 0 none; width: 100%; height: 90px; position: fixed; bottom:0; margin-bottom: 0px; margin-top: 10px; left:0; background-color: #000000; color: #FFFFFF; filter:alpha(opacity=70); opacity: 0.7; -moz-opacity:0.7; } .ragapaBottomImage { border: 0 none; position: absolute; width: 100%; height: 90px; bottom: 0px; margin: 0px; vertical-align: center; left: 0px; filter:alpha(opacity=100); text-align: center; z-index: 999998; } #ragapaiframe { border: 0 none; position: relative; width: 520px; height: 65px; margin: 0px 0px 5px 0px; vertical-align: center; filter:alpha(opacity=100); z-index: 999998; background-color: #FFFFFF; text-align: center; overflow: hidden; } #ragapatop { margin: auto; text-align: center; top: -3px; width: 95%; position: relative; border:1px solid #999999; padding: 5px 15px 5px 10px; z-index: 999998; } .ragapaBottomImage a img, .ragapaBottomImage img { border: 1px solid #D5D5D5; vertical-align: center; margin: auto; filter:alpha(opacity=100); } html { padding-bottom:80px; }  * Defines default content styling
+ */
+ 
+
+ style="position: absolute; left: -10000px; top: 0px; width: 1px; height: 1px; overflow: hidden;"
+body
+{
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+}
+
+
+*::selection {
+	background: rgb(190, 190, 190);
+}
+*::-moz-selection {
+	background: rgb(190, 190, 190);
+}
+
+ul#Menu1 {
+   height: 38px;
+   padding: 12px 0px 0px 0px;
+   margin: 0;
+   color:#333333; 
+   list-style-type: none;
+   display: table;
+   width: 100%;
+}
+
+ul#Menu1 li  {
+   float:left;
+   width:220px;
+   border-top: 1px solid #dddddd;
+   margin: 0px 20px 0 0px;
+   padding: 8px 0px 4px 0px;
+   display:table-cell;
+}
+ul#Menu1 li a {
+   font-size: 1em;
+   display:block;
+   margin: 0 0 0px 0;
+   padding: 0px 0 1px 0;
+}
+
+/* Special padding for the first and last menu item, so that they meeet the page edges neatly */
+ul#Menu1 li.first  {
+   padding: 8px 0px 4px 0px;
+ 
+}
+
+ul#Menu1 li.last  {
+   padding: 8px 0px 4px 0;
+   margin: 0px 0px 0 0px;
+    
+}
+
+ul#Menu1 li.current a {
+   color:#f13d3d;
+}
+ul#Menu1 li.section a {
+   color:#f13d3d; 
+}
+/* Special icon for RSS menu item */
+ul#Menu1 li.rss  {
+   background: transparent url(../images/Icons/rss-feed.png) no-repeat 0 10px; 
+   padding: 8px 0 4px 16px;
+   width:204px;
+}
+
+
+ul#Menu1 li span.subtitle {
+    color:#777777;
+}
+ul#Menu1 li a:hover span.email {
+    text-decoration: underline;
+}
+
+.clear{
+     clear:both;
+}
+
+body.AboutUsPage div.about_title   {
+   color:#333333;
+   margin: 4px 0 16px 0;
+}
+body.ArticlePage div#left_column h1.title,
+body.ArticlePage div#left_column div.subtitle   { 
+   color: #F13d3d;
+   margin: 10px 0 12px 0; 
+   font-weight: normal;
+}
+body.ArticlePage div#left_column div.author { 
+   color: #333333;
+   margin: 0 0 12px 0; 
+}
+body.ArticlePage div#left_column #tag_list div.tags,
+body.ArticlePage div#left_column #tag_list a,
+body.ArticlePage div#left_column .dark { 
+   color: #222222;
+   margin: 0 0 12px 0; 
+}
+body.ArticlePage div#left_column div.tags,
+body.ArticlePage div#left_column a:hover { 
+   color: #777777;
+   text-decoration: underline;
+}
+
+body.NewestArticleHolder h1 {
+   margin: 0 0 8px 0;
+   color:#ff0000;
+   font-weight: normal;
+}
+
+
+body.NewestArticleHolder li.newest_item_block  {
+    margin: 0;
+    padding: 4px 0 0 0;
+    border-bottom: 2px solid #e9e9e9;
+    height:94px;
+}
+body.NewestArticleHolder li.newest_item_block a {
+    color:#999999;
+    padding: 0 0 5px 0;
+}
+body.NewestArticleHolder li.newest_item_block.highlight_half a { 
+    color:#525252;
+}
+body.NewestArticleHolder li.newest_item_block.highlight_full a {
+   color: #f13d3d;
+}
+body.NewestArticleHolder li.newest_item_block.highlight_full a span.author {
+   color: #525252;
+}
+
+body.NewestArticleHolder li.newest_item_block a {
+    display:block;
+    
+}
+
+
+
+
+body.NewestArticleHolder li.newest_item_block:hover a .author,
+body.NewestArticleHolder li.newest_item_block:hover a .publishedDate {
+    text-decoration: none;
+    color: #525252;
+}
+body.NewestArticleHolder ul#article_index.paused .author,
+body.NewestArticleHolder ul#article_index.paused .publishedDate {
+    color: #999999;
+}
+
+body.NewestArticleHolder div#Content {
+    margin:21px 0 0px 0;
+}
+body.AboutUsPage div#Content {
+    margin:7px 0 0px 0;
+}
+ 
+div.headinfo  {
+    border-top: 2px solid #e9e9e9;
+    border-bottom: 2px solid #e9e9e9;
+    padding: 8px 0 8px 0;
+    margin: 0 0 20px 0;
+}
+
+div.headinfo div.author {
+    color: #333333;
+    display: inline;
+}
+
+body.NewestArticleHolder div#left_column a:hover  {
+  color: #f13d3d;
+
+}
+div.rotator div.img_active {
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+div#left_column ul#tag_list {
+    margin: 8px 0 28px 0;
+    list-style-type: none;
+}
+/* The list of tags at left of the Collection is bound to grow in time. But in the short term,
+   if we have exactly 10 tags on display, then we can set a specific height to this box, so that 
+   the "View all articles" underneath aligns horizontally with the lines to its right,
+   which are under the "Read More" links. 
+   Yes it's a fudge.
+*/
+#tag_list_specific_height {
+    margin: 8px 0 28px 0;
+}
+
+#tag_list li {
+    margin: 2px 0 0px 0;
+
+}
+#tag_list li a {
+    display:block;
+    width:90%;
+    padding: 0px 0 0px 0;
+    color: #999999;
+}
+
+#tag_list a:hover {
+   color:#777777;
+   text-decoration: underline;
+}
+
+#tag_list a.current {
+   color:#f13d3d;
+   text-decoration: none;
+}
+p.column_caption {
+   padding: 8px 0 8px 0;
+   margin: 0 0 3px 0;
+   border-bottom: 2px solid #e9e9e9;
+}
+p.column_caption a {
+   color: #666666;
+}
+p.column_caption a:hover {
+   color: #f13d3d;
+}
+
+p.tag_view_all {
+    padding: 7px 0 7px 0;
+    margin: 12px 0 6px 0;
+    border-top: 2px solid #e9e9e9;
+    border-bottom: 2px solid #e9e9e9;
+}
+
+/* In the Collection, we use red and grey for left hand text, but then we swap them around
+   in a collection subset (ArticleHolder_show) where we are looking at just articles for one tag */
+p.tag_title, p.tag_view_all a {
+   color: #222222;
+}
+div#left_column p.tag_view_all a  {
+   color: #f13d3d;
+   text-decoration: none;
+}
+div#left_column.holder_show p.tag_view_all a {
+   color: #666666;
+   text-decoration: none;
+}
+
+p.tag_view_all a:hover, p#tag_list a:hover, div#left_column.holder_show p.tag_view_all a:hover {
+   color:#666666;
+   text-decoration: underline;
+}
+
+div#left_column.holder_show p.tag_title {
+   color: #f13d3d;
+   margin: 3px 0 0 0;
+}
+
+.ArticleHolder div.article_image {
+    margin: 0 0 9px 0;
+    height: 100px;
+}
+.ArticlePage div.article_image, .AboutUsPage div.article_image {
+    margin: 0;
+    padding: 0;
+    background: transparent url(../images/Backgroundbs/image_filler.gif) repeat 0 0;
+    height: 400px;
+}
+
+
+
+div#Collection div.img_active {
+    z-index:100;
+}
+
+div#Collection div.img_inactive {
+    z-index: 200;
+}
+div#Collection div.img_active, div#Collection div.img_inactive {
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+div#Collection div.article_image_filler {
+    background: transparent url(../images/Backgroundbs/image_filler.gif) repeat 0 0;
+    width:220px;
+    height:100px;
+}
+div#Collection div.highlight div.title a {
+   color: #f13d3d;
+}
+div#Collection div.highlight div.teaser, div#Collection div.highlight div.author {
+   color: #333333;
+}
+
+p#tag_list {
+    margin:1px 0 12px 0;
+}
+
+div.image_credit {
+    margin: 0 0 12px 0;
+}
+div#left_column a.title:hover {
+    text-decoration: none;
+}
+
+
+div#home {
+    width:500px;
+    height: 90px;
+    margin: 53px 0 0 0;
+}
+
+.ReturnLink
+{
+    margin: 0 0 12px 0;
+}
+
+
+/* Audio player */
+.AudioCredit
+{
+    padding: 0 0 7px 0;
+}
+.AudioPlayer
+{
+    padding: 4px 0 0 0;
+}
+.AudioPlayer .FormatLink
+{
+    display: none;
+}
+
+.mollom-audio-captcha {
+	display: none;
+}
+
+ * Defines the general structure of the layout
+ */
+ body {
+     padding:0;
+     margin:0;
+ 
+     
+ }
+ 
+ div#mainframe {
+    width: 940px;
+    float:left;
+    position: relative;
+    left: 50%;
+    margin-left: -470px;
+    background-color: #ffffff;
+
+}
+div#Container {
+     position:relative;
+     padding:0 10px 0 10px;
+     margin: 0 auto;
+     text-align: left;
+
+}
+div#header {
+    width:940px;
+    float:left;
+    height: 200px;
+    padding: 25px 0 8px 0;
+    border-bottom: 2px solid #333333;
+    
+}
+
+/* Left column keeps the side menu and some other info.
+   Mid column is just for the About Us page */
+
+div#left_column, div#mid_column  {
+    width:220px;
+    float:left;
+    margin: 50px 20px 0 0px;
+    padding: 0px 0 0 0;
+    border-top: 2px solid #e9e9e9;
+    
+}
+
+div#mid_column  {
+    width:220px;
+}
+
+
+
+/* Photo in About Page */
+div#photo_column {
+    width:230px;
+    float:left;
+    margin: 50px 0px 0 0px;
+    padding: 0px 0 0 0;
+    
+}
+
+div#main_column {
+    width:700px;
+    float:left;
+    margin: 50px 0px 30px 0;
+    
+}
+
+div#footer {
+    width:940px;
+    float:left;
+    height: 70px;
+    padding: 0px 0 0 0;
+    
+}
+
+div#Collection {
+    width:720px;
+    float:left;
+    margin: 0 0;
+    
+}
+div#Collection div.item_block {
+    width: 220px;
+    height: 275px;
+    padding: 0px 0 15px 0;
+    margin:  0 20px 20px 0;
+    float:left;   
+    border-bottom: 2px solid #e9e9e9;
+    position: relative;
+}
+div#Collection div.article_summary .title {
+    height: 32px;
+    overflow: hidden;
+}
+div#Collection div.article_summary {
+    height: 139px;
+    overflow: hidden;
+}
+div#Collection div.teaser {
+    height: 60px;
+    overflow:hidden;
+    margin: 0 0 10px 0;
+    color: #777777;
+}    
+div#Collection a.readmore {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    color: #222222;
+} 
+div#Collection a.readmore:hover {
+    color:#777777; 
+    text-decoration: underline;
+}
+
+div#RotatingContent {
+    padding: 0;
+    margin: 0;
+}
+.visible {
+    /*display:block;*/
+    opacity:1;
+}
+.invisible {
+    /*display:none;*/
+    opacity:0;
+}
+.hidden {
+    display:none;
+}
+
+
+/* rotator in-page placement */
+div.rotator {
+  position:relative;
+  height:400px;
+    background: transparent url('../images/Backgroundbs/image_filler.gif') repeat 0 0;
+    overflow: hidden;
+}
+/* rotator css */
+div.rotator ul li {
+  float:left;
+  position:absolute;
+  list-style: none;
+}
+/* rotator image style */ 
+div.rotator ul li img {
+  background: #FFF;
+}
+div.rotator ul li.show {
+  z-index:500;
+}
+div.rotator h1 {
+   display:none;
+}
+
+div#left_column div.separator {
+    height: 2px;
+    width: 8px;
+    border-top: 1px solid #999999;
+    margin: 2px 0 2px 0;
+}
+div#main_column div.separator {
+    width: 100%;
+    border-top: 2px solid #e9e9e9;
+    margin: 24px 0 16px 0;
+}
+
+div.embedded_video {
+    margin:0 0 20px 0;
+}
+
+/* Image rotator for article pages */
+.RotatingImages
+{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* Send to friend feature for article pages */
+.SendToFriend
+{
+    color: #333;
+}
+.SendToFriend .SendButton
+{
+    cursor: pointer;
+    padding: 0 0 5px 0;
+    display: block;
+}
+
+.SendToFriend .SendForm
+{
+    display: none;
+    padding: 13px 0 13px 13px;
+    background: #F4F4F4;
+}
+.SendToFriend .SendForm .field
+{
+    padding: 0 0 8px 0;
+}
+.SendToFriend .SendForm .field label
+{
+    padding: 0 0 3px 0;
+    display: block;
+}
+.SendToFriend .SendForm input.text,
+.SendToFriend .SendForm textarea
+{
+    width: 190px;
+    border: 0px solid #CCC;
+    padding: 2px 0 2px 5px;
+    background: #E4E4E4;
+}
+.SendToFriend .SendForm .validationError input.text,
+.SendToFriend .SendForm .validationError textarea
+{
+    background: #C1C1C1;
+}
+.SendToFriend .SendForm .message
+{
+    display:  block;
+    font-size: 0.95em;
+    color: red;
+    padding: 0 0 5px 0;
+}
+.SendToFriend .SendForm .Actions input
+{
+    border: 0 none;
+    display: block;
+    background: #EEE;
+    padding: 4px 8px;
+    margin: 5px 0 0 0;
+}
+.SendToFriend .SendForm .Actions input:hover
+{
+    background: #F13D3D;
+    color: white;
+}
+
+.jp-audio
+{
+    margin: 0 0 12px 0;
+}
+
+
+  and the HTML5 Boilerplate :: http://html5boilerplate.com
+  
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}                 
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted. 
+  don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: 1em;}
+ 
+/* Accessible focus treatment
+  people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {outline: none;}
+
+small {font-size: 85%;}
+
+strong, th {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't screw with your line-heights
+  gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+
+
+body {font: 13px MyriadPro, sans-serif;}
+
+/* using local fonts? make sure to read up on Paul Irish's 
+  Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+
+/* we like off-black for text */
+body, select, input, textarea {color: #333;}
+
+a {color: #222222;
+   text-decoration: none;}
+a:hover {
+   text-decoration: none;
+   color:#f13d3d;}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+
+
+
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+  
+    
+}
+
+@media all and (orientation: portrait) {
+  
+}
+
+@media all and (orientation: landscape) {
+  
+}
+
+/** 
+ * SilverStripe Black Candy Theme
+ * http://www.silverstripe.com
+ *
+ * This typography file is included in the WYSIWYG editor and the front end. It provides
+ * a place to add link styles and font styles you would like in the CMS and the Front End.
+*/
+
+
+/* GENERIC STYLES 
+-------------------------------------------- */
+
+
+
+.typography {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.typography * {
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* PARAGRAPHS 
+-------------------------------------------- */
+.typography p { 
+    margin: 0 0 18px 0;
+}
+
+
+/* INRO 
+-------------------------------------------- */
+.typography .intro {
+   font-style: italic;
+   font-weight: bold;
+   font-size: 14px;
+   color: #666666;
+   line-height:130%;
+   text-transform: uppercase;
+}
+
+
+/* QUOTES
+-------------------------------------------- */
+.typography p.follows_blockquote {
+    margin: 0 0 18px 260px;
+} 
+
+
+.typography blockquote p {
+   font-style: italic;
+   font-weight: bold;
+   font-size: 14px;
+   color: #666666;
+   border-top: 1px solid #666666;
+   width: 233px;
+   margin: 4px 25px 12px 0;
+   padding: 12px 0 0 0;
+   float:left;
+   line-height:130%;
+   text-transform: uppercase;
+}
+
+.typography q {
+}
+/* Special quote with a red 66 quote glyph on left */
+.typography p.big_quote {
+    background: transparent url(../images/Icons/big_quote.gif) no-repeat 0 0;
+    padding: 10px 0 0 50px;
+    color: #999999;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    line-height:130%;
+    text-transform: uppercase;
+    border-top: 2px solid #E9E9E9;
+}
+
+/* LINKS 
+-------------------------------------------- */
+
+.typography a { 
+    text-decoration: none; 
+}
+.typography a:hover { 
+    text-decoration: underline;
+    color: #777;
+}
+
+/* LIST STYLES 
+-------------------------------------------- */
+.typography ul, 
+.typography ol {
+    list-style: disc inside none;
+}
+.typography li {
+}
+.typography li li {
+}
+
+/* HEADER STYLES 
+-------------------------------------------- */
+
+.typography h1 {}
+.typography h2 {} 
+.typography h3 {}
+.typography h4 {}
+.typography h5 {}
+.typography h6 {}
+
+/* PRE STYLES 
+-------------------------------------------- */ 
+.typography pre {
+}
+
+/* TABLE STYLING 
+-------------------------------------------- */
+.typography table {}
+.typography tr {}
+
+.typography td {}
+
+/* WYSIWYG EDITOR ALIGNMENT CLASSES 
+-------------------------------------------- */
+.typography .left {
+    text-align: left;
+}
+.typography .center {
+    text-align: center;
+}
+.typography .right {
+    text-align: right;
+}
+
+/* IMAGES 
+-------------------------------------------- */
+.typography img {
+    border: none;
+}
+.typography img.right {
+    float: right;
+    padding: 0 0 4px 25px;
+}
+.typography img.left {
+    float: left;
+    padding: 0 25px 4px 0;
+}
+.typography img.leftAlone {
+    float: left;
+    margin-right: 100%;
+}
+.typography img.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.typography .subtitle { 
+    margin: 12px 0 12px 0;
+}
