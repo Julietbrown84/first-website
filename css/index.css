@@ -146,39 +146,6 @@ body
 }
 
 
-body.AboutUsPage div.about_title   {
-   color:#333333;
-   margin: 4px 0 16px 0;
-}
-body.ArticlePage div#left_column h1.title,
-body.ArticlePage div#left_column div.subtitle   { 
-   color: #F13d3d;
-   margin: 10px 0 12px 0; 
-   font-weight: normal;
-}
-body.ArticlePage div#left_column div.author { 
-   color: #333333;
-   margin: 0 0 12px 0; 
-}
-body.ArticlePage div#left_column #tag_list div.tags,
-body.ArticlePage div#left_column #tag_list a,
-body.ArticlePage div#left_column .dark { 
-   color: #222222;
-   margin: 0 0 12px 0; 
-}
-body.ArticlePage div#left_column div.tags,
-body.ArticlePage div#left_column a:hover { 
-   color: #777777;
-   text-decoration: underline;
-}
-
-body.NewestArticleHolder h1 {
-   margin: 0 0 8px 0;
-   color:#ff0000;
-   font-weight: normal;
-}
-
-
 body.NewestArticleHolder li.newest_item_block  {
     margin: 0;
     padding: 4px 0 0 0;
@@ -205,57 +172,6 @@ body.NewestArticleHolder li.newest_item_block a {
 }
 
 
-
-
-body.NewestArticleHolder li.newest_item_block:hover a .author,
-body.NewestArticleHolder li.newest_item_block:hover a .publishedDate {
-    text-decoration: none;
-    color: #525252;
-}
-body.NewestArticleHolder ul#article_index.paused .author,
-body.NewestArticleHolder ul#article_index.paused .publishedDate {
-    color: #999999;
-}
-
-body.NewestArticleHolder div#Content {
-    margin:21px 0 0px 0;
-}
-body.AboutUsPage div#Content {
-    margin:7px 0 0px 0;
-}
- 
-div.headinfo  {
-    border-top: 2px solid #e9e9e9;
-    border-bottom: 2px solid #e9e9e9;
-    padding: 8px 0 8px 0;
-    margin: 0 0 20px 0;
-}
-
-div.headinfo div.author {
-    color: #333333;
-    display: inline;
-}
-
-body.NewestArticleHolder div#left_column a:hover  {
-  color: #f13d3d;
-
-}
-div.rotator div.img_active {
-    position:absolute;
-    top: 0;
-    left: 0;
-}
-
-div#left_column ul#tag_list {
-    margin: 8px 0 28px 0;
-    list-style-type: none;
-}
-/* The list of tags at left of the Collection is bound to grow in time. But in the short term,
-   if we have exactly 10 tags on display, then we can set a specific height to this box, so that 
-   the "View all articles" underneath aligns horizontally with the lines to its right,
-   which are under the "Read More" links. 
-   Yes it's a fudge.
-*/
 #tag_list_specific_height {
     margin: 8px 0 28px 0;
 }
@@ -264,113 +180,6 @@ div#left_column ul#tag_list {
     margin: 2px 0 0px 0;
 
 }
-#tag_list li a {
-    display:block;
-    width:90%;
-    padding: 0px 0 0px 0;
-    color: #999999;
-}
-
-#tag_list a:hover {
-   color:#777777;
-   text-decoration: underline;
-}
-
-#tag_list a.current {
-   color:#f13d3d;
-   text-decoration: none;
-}
-p.column_caption {
-   padding: 8px 0 8px 0;
-   margin: 0 0 3px 0;
-   border-bottom: 2px solid #e9e9e9;
-}
-p.column_caption a {
-   color: #666666;
-}
-p.column_caption a:hover {
-   color: #f13d3d;
-}
-
-p.tag_view_all {
-    padding: 7px 0 7px 0;
-    margin: 12px 0 6px 0;
-    border-top: 2px solid #e9e9e9;
-    border-bottom: 2px solid #e9e9e9;
-}
-
-/* In the Collection, we use red and grey for left hand text, but then we swap them around
-   in a collection subset (ArticleHolder_show) where we are looking at just articles for one tag */
-p.tag_title, p.tag_view_all a {
-   color: #222222;
-}
-div#left_column p.tag_view_all a  {
-   color: #f13d3d;
-   text-decoration: none;
-}
-div#left_column.holder_show p.tag_view_all a {
-   color: #666666;
-   text-decoration: none;
-}
-
-p.tag_view_all a:hover, p#tag_list a:hover, div#left_column.holder_show p.tag_view_all a:hover {
-   color:#666666;
-   text-decoration: underline;
-}
-
-div#left_column.holder_show p.tag_title {
-   color: #f13d3d;
-   margin: 3px 0 0 0;
-}
-
-.ArticleHolder div.article_image {
-    margin: 0 0 9px 0;
-    height: 100px;
-}
-.ArticlePage div.article_image, .AboutUsPage div.article_image {
-    margin: 0;
-    padding: 0;
-    background: transparent url(../images/Backgroundbs/image_filler.gif) repeat 0 0;
-    height: 400px;
-}
-
-
-
-div#Collection div.img_active {
-    z-index:100;
-}
-
-div#Collection div.img_inactive {
-    z-index: 200;
-}
-div#Collection div.img_active, div#Collection div.img_inactive {
-    position:absolute;
-    top: 0;
-    left: 0;
-}
-div#Collection div.article_image_filler {
-    background: transparent url(../images/Backgroundbs/image_filler.gif) repeat 0 0;
-    width:220px;
-    height:100px;
-}
-div#Collection div.highlight div.title a {
-   color: #f13d3d;
-}
-div#Collection div.highlight div.teaser, div#Collection div.highlight div.author {
-   color: #333333;
-}
-
-p#tag_list {
-    margin:1px 0 12px 0;
-}
-
-div.image_credit {
-    margin: 0 0 12px 0;
-}
-div#left_column a.title:hover {
-    text-decoration: none;
-}
-
 
 div#home {
     width:500px;
@@ -378,37 +187,15 @@ div#home {
     margin: 53px 0 0 0;
 }
 
-.ReturnLink
-{
+
+.ReturnLink {
     margin: 0 0 12px 0;
 }
 
 
-/* Audio player */
-.AudioCredit
-{
-    padding: 0 0 7px 0;
-}
-.AudioPlayer
-{
-    padding: 4px 0 0 0;
-}
-.AudioPlayer .FormatLink
-{
-    display: none;
-}
-
-.mollom-audio-captcha {
-	display: none;
-}
-
- * Defines the general structure of the layout
- */
  body {
      padding:0;
-     margin:0;
- 
-     
+     margin:0;     
  }
  
  div#mainframe {
@@ -436,25 +223,18 @@ div#header {
     
 }
 
-/* Left column keeps the side menu and some other info.
-   Mid column is just for the About Us page */
-
 div#left_column, div#mid_column  {
     width:220px;
     float:left;
     margin: 50px 20px 0 0px;
     padding: 0px 0 0 0;
-    border-top: 2px solid #e9e9e9;
-    
+    border-top: 2px solid #e9e9e9;    
 }
 
 div#mid_column  {
     width:220px;
 }
 
-
-
-/* Photo in About Page */
 div#photo_column {
     width:230px;
     float:left;
@@ -484,180 +264,14 @@ div#Collection {
     margin: 0 0;
     
 }
-div#Collection div.item_block {
-    width: 220px;
-    height: 275px;
-    padding: 0px 0 15px 0;
-    margin:  0 20px 20px 0;
-    float:left;   
-    border-bottom: 2px solid #e9e9e9;
-    position: relative;
-}
-div#Collection div.article_summary .title {
-    height: 32px;
-    overflow: hidden;
-}
-div#Collection div.article_summary {
-    height: 139px;
-    overflow: hidden;
-}
-div#Collection div.teaser {
-    height: 60px;
-    overflow:hidden;
-    margin: 0 0 10px 0;
-    color: #777777;
-}    
-div#Collection a.readmore {
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    color: #222222;
-} 
-div#Collection a.readmore:hover {
-    color:#777777; 
-    text-decoration: underline;
-}
 
-div#RotatingContent {
-    padding: 0;
-    margin: 0;
-}
-.visible {
-    /*display:block;*/
-    opacity:1;
-}
-.invisible {
-    /*display:none;*/
-    opacity:0;
-}
-.hidden {
-    display:none;
-}
-
-
-/* rotator in-page placement */
 div.rotator {
   position:relative;
   height:400px;
     background: transparent url('../images/Backgroundbs/image_filler.gif') repeat 0 0;
     overflow: hidden;
 }
-/* rotator css */
-div.rotator ul li {
-  float:left;
-  position:absolute;
-  list-style: none;
-}
-/* rotator image style */ 
-div.rotator ul li img {
-  background: #FFF;
-}
-div.rotator ul li.show {
-  z-index:500;
-}
-div.rotator h1 {
-   display:none;
-}
 
-div#left_column div.separator {
-    height: 2px;
-    width: 8px;
-    border-top: 1px solid #999999;
-    margin: 2px 0 2px 0;
-}
-div#main_column div.separator {
-    width: 100%;
-    border-top: 2px solid #e9e9e9;
-    margin: 24px 0 16px 0;
-}
-
-div.embedded_video {
-    margin:0 0 20px 0;
-}
-
-/* Image rotator for article pages */
-.RotatingImages
-{
-    width: 700px;
-    height: 400px;
-    overflow: hidden;
-}
-
-/* Send to friend feature for article pages */
-.SendToFriend
-{
-    color: #333;
-}
-.SendToFriend .SendButton
-{
-    cursor: pointer;
-    padding: 0 0 5px 0;
-    display: block;
-}
-
-.SendToFriend .SendForm
-{
-    display: none;
-    padding: 13px 0 13px 13px;
-    background: #F4F4F4;
-}
-.SendToFriend .SendForm .field
-{
-    padding: 0 0 8px 0;
-}
-.SendToFriend .SendForm .field label
-{
-    padding: 0 0 3px 0;
-    display: block;
-}
-.SendToFriend .SendForm input.text,
-.SendToFriend .SendForm textarea
-{
-    width: 190px;
-    border: 0px solid #CCC;
-    padding: 2px 0 2px 5px;
-    background: #E4E4E4;
-}
-.SendToFriend .SendForm .validationError input.text,
-.SendToFriend .SendForm .validationError textarea
-{
-    background: #C1C1C1;
-}
-.SendToFriend .SendForm .message
-{
-    display:  block;
-    font-size: 0.95em;
-    color: red;
-    padding: 0 0 5px 0;
-}
-.SendToFriend .SendForm .Actions input
-{
-    border: 0 none;
-    display: block;
-    background: #EEE;
-    padding: 4px 8px;
-    margin: 5px 0 0 0;
-}
-.SendToFriend .SendForm .Actions input:hover
-{
-    background: #F13D3D;
-    color: white;
-}
-
-.jp-audio
-{
-    margin: 0 0 12px 0;
-}
-
-
-  and the HTML5 Boilerplate :: http://html5boilerplate.com
-  
--------------------------------------------------------------------------------*/
-
-/* Let's default this puppy out
--------------------------------------------------------------------------------*/
-
-          
 
 article, aside, figure, footer, header, hgroup, nav, section {display: block;}
 
@@ -703,10 +317,10 @@ pre {
   word-wrap: break-word; /* IE */
 }
 
-input[type="radio"] {vertical-align: text-bottom;}
+/*input[type="radio"] {vertical-align: text-bottom;}
 input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
 .ie6 input {vertical-align: text-bottom;}
-
+*/
 select, input, textarea {font: 99% sans-serif;}
 
 table {font-size: 1em;}
