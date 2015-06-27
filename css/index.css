@@ -199,17 +199,11 @@ div.rotator {
 
 article, aside, figure, footer, header, hgroup, nav, section {display: block;}
 
-/*/* Responsive images and other embedded objects
-   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
-   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
 object,
 embed {max-width: 100%;}
 
-/* force a vertical scrollbar to prevent a jumpy page */
 html {overflow-y: scroll;}
 
-/* we use a lot of ULs that aren't bulleted. 
-  don't forget to restore the bullets within content. */
 ul {list-style: none;}
 
 blockquote, q {quotes: none;}
@@ -225,7 +219,7 @@ del {text-decoration: line-through;}
 
 abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
 
-/* tables still need cellspacing="0" in the markup */
+
 table {border-collapse: collapse; border-spacing: 0;}
 th {font-weight: bold; vertical-align: bottom;}
 td {font-weight: normal; vertical-align: top;}
@@ -235,10 +229,10 @@ hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 
 input, select {vertical-align: middle;}
 
 pre {
-  white-space: pre; /* CSS2 */
-  white-space: pre-wrap; /* CSS 2.1 */
-  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
-  word-wrap: break-word; /* IE */
+  white-space: pre; 
+  white-space: pre-wrap; 
+  white-space: pre-line; 
+  word-wrap: break-word; 
 }
 
 input[type="radio"] {vertical-align: text-bottom;}
